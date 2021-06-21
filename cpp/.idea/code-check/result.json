@@ -1,0 +1,9 @@
+{
+  "result" : "success",
+  "reason" : "Please configure the compile_commands.json. Otherwise, the rule [huawei-identifier-naming_global, huawei-identifier-naming_camel] will not check.",
+  "data" : 12,
+  "error" : {
+    "code" : "CC.00120000.500",
+    "message" : "Please configure the compile_commands.json. Otherwise, the rule [huawei-identifier-naming_global, huawei-identifier-naming_camel] will not check."
+  }
+}

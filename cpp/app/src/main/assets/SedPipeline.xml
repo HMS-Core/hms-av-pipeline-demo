@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Nodes>
+    <node id="0" name="DataSource" mime="audio/data-source" type="source">
+        <next id="1"/>
+    </node>
+    <node id="1" name="SedAlg" mime="audio/filter" type="filter">
+        <next id="2"/>
+    </node>
+    <node id="2" name="DataSink" mime="audio/data-sink" type="sink">
+    </node>
+</Nodes>

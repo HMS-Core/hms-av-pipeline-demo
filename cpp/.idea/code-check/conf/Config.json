@@ -1,0 +1,693 @@
+{
+  "taskId" : "f1fbd2eac2a84e379354c3964fb9a79c",
+  "language" : [ "C++" ],
+  "projectRoot" : "D:\\_project\\AVPipeline\\code\\TAG-2021-06-10-2213\\huawei-avpipeline-android-cpp-demo",
+  "sourceFiles" : [ "app\\src\\main\\cpp\\native-lib.cpp" ],
+  "fileSuffixes" : {
+    "pmd" : [ "java" ],
+    "testqyk" : [ "123" ],
+    "checkstylechecker" : [ "java" ],
+    "fixbotengine-java" : [ "java" ],
+    "codemars" : [ "hh", "c++", "C", "vue", "js", "h++", "py", "jsx", "java", "xml", "html", "inc", "htm", "cc", "mm", "cpp", "cxx", "inl", "h", "go", "hpp", "hxx", "cp", "tpp", "txx", "properties" ],
+    "fixbotengine-cxx" : [ "cc", "hh", "mm", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "inc" ],
+    "cmetrics" : [ "cc", "mm", "hh", "cpp", "cxx", "c++", "c", "inl", "h", "go", "js", "hpp", "hxx", "h++", "py", "cp", "java", "lua", "asm", "inc" ],
+    "flake8" : [ "py" ],
+    "eslint" : [ "ux", "vue", "js", "jsx" ],
+    "clangtidy" : [ "cc", "hh", "mm", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "inc" ],
+    "cppcheck" : [ "cc", "hh", "mm", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "inc" ],
+    "wnpythoncodecheck" : [ "py" ],
+    "spotbugs" : [ "java" ],
+    "checkstyle" : [ "java" ],
+    "coverity" : [ "*" ],
+    "gostyle" : [ "go" ],
+    "ucfn" : [ "*" ],
+    "codefolder" : [ "*" ],
+    "cpplint" : [ "cc", "hh", "mm", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "inc" ],
+    "anystandard" : [ "lua" ],
+    "sonarqube" : [ "*" ],
+    "secmissile" : [ "*" ],
+    "atia" : [ "cpp", " hpp" ],
+    "specchecker" : [ "cc", "mm", "hh", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "inc" ],
+    "pmd-p3c" : [ "java" ],
+    "tscancode" : [ "cc", "cpp", "c", "h" ],
+    "microcode" : [ "p5", "h", "asm" ],
+    "pclint-plus" : [ "cc", "hh", "mm", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "inc" ],
+    "flexelint" : [ "cc", "hh", "mm", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "inc" ],
+    "fortify" : [ "*" ],
+    "secbrella" : [ "*" ],
+    "commitlog" : [ "*" ],
+    "goarch" : [ "go" ],
+    "pythonchecker" : [ "py" ],
+    "chat" : [ "*" ],
+    "pylint" : [ "py" ],
+    "sccheck" : [ "java" ],
+    "golint" : [ "go" ],
+    "fixbot-pclintplus" : [ "cc", "mm", "hh", "cpp", "cxx", "c++", "c", "inl", "h", "hpp", "hxx", "h++", "cp", "tpp", "txx", "inc" ],
+    "fmc" : [ "*" ]
+  },
+  "properties" : {
+    "clangtidy" : {
+      "pythonVersion" : "python3",
+      "headerFilter" : "\"^D:[\\\\|/]_project[\\\\|/]AVPipeline[\\\\|/]code[\\\\|/]TAG-2021-06-10-2213[\\\\|/]huawei-avpipeline-android-cpp-demo[\\\\|/].*\""
+    },
+    "fixbotengine-cxx" : {
+      "pythonVersion" : "python3",
+      "headerFilter" : "\"^D:[\\\\|/]_project[\\\\|/]AVPipeline[\\\\|/]code[\\\\|/]TAG-2021-06-10-2213[\\\\|/]huawei-avpipeline-android-cpp-demo[\\\\|/].*\"",
+      "fixbotDir" : "C:\\Users\\w00562782\\.hicode\\CodeCheck\\CodeCheckAgent\\fixbot",
+      "identifyBugLanguage" : "true"
+    },
+    "codemars" : {
+      "pythonVersion" : "python3"
+    },
+    "cmetrics" : {
+      "checkPath" : "\"D:\\_project\\AVPipeline\\code\\TAG-2021-06-10-2213\\huawei-avpipeline-android-cpp-demo\\app\\src\\main\\cpp\\native-lib.cpp\""
+    }
+  },
+  "runtimeEnv" : {
+    "jrePath" : "D:\\Program Files\\Android\\Android Studio\\jre\\jre\\bin\\java.exe"
+  },
+  "mode" : 2,
+  "languageSupports" : [ {
+    "fileSuffixes" : [ "cpp", "cxx", "cc", "cp", "c++", "hpp" ],
+    "language" : "c++"
+  } ],
+  "ruleSets" : [ {
+    "toolRules" : [ {
+      "rules" : [ {
+        "ruleName" : "huge_cca_cyclomatic_complexity",
+        "args" : [ {
+          "value" : "20",
+          "key" : "threshold"
+        }, {
+          "value" : "20",
+          "key" : "threshold_modify"
+        } ]
+      }, {
+        "ruleName" : "huge_folder",
+        "args" : [ {
+          "value" : "50",
+          "key" : "threshold"
+        } ]
+      }, {
+        "ruleName" : "huge_non_headerfile",
+        "args" : [ {
+          "value" : "2000",
+          "key" : "threshold_modify"
+        }, {
+          "value" : "2000",
+          "key" : "threshold"
+        } ]
+      }, {
+        "ruleName" : "huge_depth",
+        "args" : [ {
+          "value" : "4",
+          "key" : "threshold"
+        }, {
+          "value" : "4",
+          "key" : "threshold_modify"
+        } ]
+      }, {
+        "ruleName" : "duplication_file",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huge_cyclomatic_complexity",
+        "args" : [ {
+          "value" : "20",
+          "key" : "threshold"
+        }, {
+          "value" : "20",
+          "key" : "threshold_modify"
+        } ]
+      }, {
+        "ruleName" : "warning_suppression",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huge_method",
+        "args" : [ {
+          "value" : "50",
+          "key" : "threshold_modify"
+        }, {
+          "value" : "50",
+          "key" : "threshold"
+        } ]
+      }, {
+        "ruleName" : "redundant_code",
+        "args" : [ ]
+      }, {
+        "ruleName" : "unsafe_function",
+        "args" : [ ]
+      }, {
+        "ruleName" : "duplication_code",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huge_headerfile",
+        "args" : [ {
+          "value" : "500",
+          "key" : "threshold_modify"
+        }, {
+          "value" : "500",
+          "key" : "threshold"
+        } ]
+      } ],
+      "toolName" : "cmetrics"
+    }, {
+      "rules" : [ {
+        "ruleName" : "C_RULE_ID_SWITCH_INDENTATION",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_LINE_LENGTH",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_INLINE_FUNCTION_SIZE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_CODE_IN_COMMENT",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_COMPARISION_CONDITION",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_POINTER_DECLARE_FOLLOW_NAME",
+        "args" : [ {
+          "value" : "false",
+          "key" : "c_coding_standard_v5.0"
+        } ]
+      }, {
+        "ruleName" : "C_RULE_ID_COMMENT_LOCATION",
+        "args" : [ {
+          "value" : "",
+          "key" : "CommentLocationChecker"
+        } ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NO_USE_NEW_UNIQUE_PTR",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_BLANK_LINE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FUNCTION_DECL_PARAM_ALIGN",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_SMARTPOINTER_INSTEADOF_ORIGINPOINTER",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_CPPFILE_EXTENSION",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NO_USE_FORWARDDECLARATION",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_HEARDER_FILE_NO_USE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_FUN_PARA_POINTER_DETECT",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_CONSTURCT_INITIAL_ALIGN",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NO_USE_CHAR_STAR",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_CLASSSCOPE_ORDER",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_FILE_NAME_SAME_AS_CLASS_NAME",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NO_USE_DYNAMIC_CAST",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_CLOBALFUNC_USE_NAMESPACE_OR_STATIC",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_MAGICNUMBER",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_COMMENT_ADDSPASE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FUNCTION_SIZE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_CLASS_VAR_STYLE_DETECTION",
+        "args" : [ {
+          "value" : "",
+          "key" : "NamingStyle"
+        }, {
+          "value" : "0",
+          "key" : "NamingStyleStaticConstSwitch"
+        } ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NO_USE_NEW_SHARED_PTR",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_KR_STYLE",
+        "args" : [ {
+          "value" : "K&R",
+          "key" : "StyleOfBrace"
+        }, {
+          "value" : "false",
+          "key" : "c_coding_standard_v5.0"
+        } ]
+      }, {
+        "ruleName" : "C_RULE_ID_EXTERN_HAS_INCLUDE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_ALIAS_BASIC_TYPE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NAMINGSPACE_USING_POLICY",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_INDENT_CHECK",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_CLOBALVAR_USE_NAMESPACE_OR_STATIC",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NO_USE_SHAREDPTR",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FILE_HEAD_COMMENT",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FUNCTION_PARAM_ALIGN",
+        "args" : [ {
+          "value" : "false",
+          "key" : "c_coding_standard_v5.0"
+        } ]
+      }, {
+        "ruleName" : "C_RULE_ID_MULTI_VAR_AND_ASSIGNMENT_ONELINE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_AND_SYMBOL_DECLARATION",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_HORIZON_SPACE",
+        "args" : [ {
+          "value" : "false",
+          "key" : "c_coding_standard_v5.0"
+        } ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_NO_USE_AUTO_PTR",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FORBID_EXTERN_EXTERNALS",
+        "args" : [ {
+          "value" : "",
+          "key" : "ForbidExternExternalsCheckHeaderFile"
+        } ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_DECLARE_AND_INITIALIZE_VARIABLES_CLOSE_USED_CHECKER",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_EXPRESSION_OPERATE_ORDER",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FUNCTION_HEADER",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CPP_RULE_ID_CLOBALVAR_NOUSE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_CORRESPONDING_HEADER",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FUNCTION_DECL_PARENTHESIS_PARAM_TYPE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FUNCTION_ELSE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_INIT_INDENT",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_PRECOMPILE_POS",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_VAR_WITH_UNARY_OPT",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_FUNCTION__RETURNTYPE_QUALIFIER_NAME_ONELINE",
+        "args" : [ ]
+      }, {
+        "ruleName" : "C_RULE_ID_NO_USE_TODO",
+        "args" : [ {
+          "value" : "TODO|FIXME|TBD",
+          "key" : "ToDefSelf"
+        } ]
+      }, {
+        "ruleName" : "C_RULE_ID_SWITCH_DEFAULT",
+        "args" : [ {
+          "value" : "false",
+          "key" : "c_coding_standard_v5.0"
+        } ]
+      } ],
+      "toolName" : "fixbotengine-cxx"
+    }, {
+      "rules" : [ {
+        "ruleName" : "huawei-force-type-void",
+        "args" : [ ]
+      }, {
+        "ruleName" : "cppcoreguidelines-pro-type-cstyle-cast",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-use-nullptr",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-non-const-parameter",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-use-using",
+        "args" : [ ]
+      }, {
+        "ruleName" : "modernize-use-noexcept",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-non-const-references-parameter",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-BugproneLambda",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-expression-line-break",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-default-arguments",
+        "args" : [ ]
+      }, {
+        "ruleName" : "modernize-use-auto",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-copy-construct-assign-consistent",
+        "args" : [ ]
+      }, {
+        "ruleName" : "readability-braces-around-statements_loop",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-use-default-capture-in-lambda",
+        "args" : [ ]
+      }, {
+        "ruleName" : "readability-braces-around-statements_if",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-forbid-redefine-inherited-non-virtual-method",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-identifier-naming_global",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-forbidden-std-move-on-const-object",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-identifier-naming_camel",
+        "args" : [ {
+          "value" : "camelBack",
+          "key" : "StaticVariableCase"
+        }, {
+          "value" : "g_",
+          "key" : "GlobalVariablePrefix"
+        }, {
+          "value" : "CamelCase",
+          "key" : "FunctionCase"
+        }, {
+          "value" : "camelBack",
+          "key" : "MemberCase"
+        }, {
+          "value" : "camelBack",
+          "key" : "ConstantParameterCase"
+        }, {
+          "value" : "camelBack",
+          "key" : "LocalVariableCase"
+        }, {
+          "value" : "UPPER_CASE",
+          "key" : "GlobalConstantCase"
+        }, {
+          "value" : "camelBack",
+          "key" : "GlobalVariableCase"
+        }, {
+          "value" : "5",
+          "key" : "ParameterThreshold"
+        }, {
+          "value" : "CamelCase",
+          "key" : "MethodCase"
+        }, {
+          "value" : "",
+          "key" : "ModuleNames"
+        }, {
+          "value" : "UPPER_CASE",
+          "key" : "MacroDefinitionCase"
+        }, {
+          "value" : "",
+          "key" : "ModuleNamesIgnoreNS"
+        }, {
+          "value" : "",
+          "key" : "EnumForbiddenWord"
+        }, {
+          "value" : "",
+          "key" : "ConstantParameterModuleLevel"
+        }, {
+          "value" : "",
+          "key" : "EnumModuleLevel"
+        }, {
+          "value" : "CamelCase",
+          "key" : "StructCase"
+        }, {
+          "value" : "UPPER_CASE",
+          "key" : "EnumConstantCase"
+        }, {
+          "value" : "CamelCase",
+          "key" : "EnumCase"
+        }, {
+          "value" : "CamelCase",
+          "key" : "ClassCase"
+        }, {
+          "value" : "camelBack",
+          "key" : "ParameterCase"
+        }, {
+          "value" : "CamelCase",
+          "key" : "UnionCase"
+        }, {
+          "value" : "4",
+          "key" : "NestingThreshold"
+        }, {
+          "value" : "",
+          "key" : "GlobalVariablePrefixes"
+        }, {
+          "value" : "",
+          "key" : "HungarianPrefixes"
+        }, {
+          "value" : "50",
+          "key" : "LineThreshold"
+        }, {
+          "value" : "",
+          "key" : "ParameterPackCase"
+        }, {
+          "value" : "",
+          "key" : "IgnoreFailedSplit"
+        } ]
+      }, {
+        "ruleName" : "huawei-pro-type-member-init",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-global-variable-and-function",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-base-destructor-should-be-virtual",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-not-hold-pointer-from-string-cstr",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-self-contained-header",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-include-order",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-use-equals-delete",
+        "args" : [ ]
+      }, {
+        "ruleName" : "modernize-use-override",
+        "args" : [ ]
+      }, {
+        "ruleName" : "readability-function-size_parameters",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-header-guard",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-move-construct-assign-consistent",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-undefined-memory-manipulation",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-lambda-capture-default-captures-this",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-macro-define-not-const",
+        "args" : [ ]
+      }, {
+        "ruleName" : "modernize-deprecated-headers",
+        "args" : [ ]
+      }, {
+        "ruleName" : "cppcoreguidelines-pro-type-reinterpret-cast",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-explicit-constructor",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-header-file-cyclic-depended",
+        "args" : [ ]
+      }, {
+        "ruleName" : "huawei-member-function-could-be-const",
+        "args" : [ ]
+      }, {
+        "ruleName" : "cppcoreguidelines-pro-type-member-init",
+        "args" : [ ]
+      }, {
+        "ruleName" : "cppcoreguidelines-pro-type-const-cast",
+        "args" : [ ]
+      } ],
+      "toolName" : "clangtidy"
+    }, {
+      "rules" : [ {
+        "ruleName" : "DirectCallSystemAssert",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SafeFuncDestMaxCheck",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SensitiveInfoInString",
+        "args" : [ ]
+      }, {
+        "ruleName" : "StringOverflow",
+        "args" : [ ]
+      }, {
+        "ruleName" : "ForbidUseSetjmp",
+        "args" : [ ]
+      }, {
+        "ruleName" : "RiskyFunction",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SetNullAfterFree",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CtorDtorMismatch",
+        "args" : [ ]
+      }, {
+        "ruleName" : "ForbidCreateThreadInCtor",
+        "args" : [ ]
+      }, {
+        "ruleName" : "OperationMayFailInCtor",
+        "args" : [ ]
+      }, {
+        "ruleName" : "ReturnPrivateMemberAddr",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SelfDefinedSafeFunc",
+        "args" : [ ]
+      }, {
+        "ruleName" : "ForbidTryCatch",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SafeFuncRedefined",
+        "args" : [ ]
+      }, {
+        "ruleName" : "NonAsyncFuncInSignal",
+        "args" : [ ]
+      }, {
+        "ruleName" : "UncontrolledMemAlloc",
+        "args" : [ ]
+      }, {
+        "ruleName" : "DivideByZero",
+        "args" : [ ]
+      }, {
+        "ruleName" : "LogicOperationToPointer",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CallingSelfDefinedSafeFunc",
+        "args" : [ ]
+      }, {
+        "ruleName" : "IntegerPointerConversion",
+        "args" : [ ]
+      }, {
+        "ruleName" : "FormatString",
+        "args" : [ ]
+      }, {
+        "ruleName" : "CmdInjection",
+        "args" : [ ]
+      }, {
+        "ruleName" : "ImproperUseOfSizeof",
+        "args" : [ ]
+      }, {
+        "ruleName" : "UnsafeRand",
+        "args" : [ ]
+      }, {
+        "ruleName" : "MultiStatementInAssert",
+        "args" : [ ]
+      }, {
+        "ruleName" : "AssertInAPI",
+        "args" : [ ]
+      }, {
+        "ruleName" : "VarTobeConst",
+        "args" : [ ]
+      }, {
+        "ruleName" : "ForbidUseExitFunc",
+        "args" : [ ]
+      }, {
+        "ruleName" : "LengthNeedPass",
+        "args" : [ ]
+      }, {
+        "ruleName" : "AssertUsedAtRuntime",
+        "args" : [ ]
+      }, {
+        "ruleName" : "DeclareWithoutInit",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SafeFuncMisused",
+        "args" : [ ]
+      }, {
+        "ruleName" : "DoNotUseExitProcess",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SafeFuncCheckedReturn",
+        "args" : [ ]
+      }, {
+        "ruleName" : "ForbidReallocAndAlloca",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SafeFuncFalsePackaging",
+        "args" : [ ]
+      }, {
+        "ruleName" : "FalseDefinedSafeFunc",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SideEffectInAssert",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SensitiveInfoLeak",
+        "args" : [ ]
+      }, {
+        "ruleName" : "NonReentrantFunction",
+        "args" : [ ]
+      }, {
+        "ruleName" : "DoNotUseAbort",
+        "args" : [ ]
+      }, {
+        "ruleName" : "SelfDefinedRiskyFunc",
+        "args" : [ ]
+      }, {
+        "ruleName" : "VarTypeCast",
+        "args" : [ ]
+      }, {
+        "ruleName" : "AvoidDefinePublicMember",
+        "args" : [ ]
+      } ],
+      "toolName" : "codemars"
+    } ],
+    "language" : "c++"
+  } ]
+}

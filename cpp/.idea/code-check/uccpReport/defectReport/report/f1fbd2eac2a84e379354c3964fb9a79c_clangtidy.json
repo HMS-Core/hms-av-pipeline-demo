@@ -1,0 +1,19 @@
+{
+"status": "success",
+"errorMsg": "",
+"defects":
+[{
+  "buggyFilePath": "app/src/main/cpp/native-lib.cpp",
+  "bugId": "bfe630a9-f68d-4f01-b1d1-c79fdbd8071b",
+  "defectLevel": "warning",
+  "defectType": "huawei-macro-define-not-const",
+  "analyzerName": "clangtidy",
+  "description": "Macros are not allowed to represent constants.",
+  "mainBuggyLine": 14,
+  "mainBuggyCode": "#define LOG_TAG \"avp-cppdemo\" ",
+  "codeContextStartLine": 12,
+  "codeContext": "\n#undef LOG_TAG\n#define LOG_TAG \"avp-cppdemo\"\n#define ALOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)\n#define ALOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)",
+  "extra": "",
+  "language": "c++"
+} ]
+}
