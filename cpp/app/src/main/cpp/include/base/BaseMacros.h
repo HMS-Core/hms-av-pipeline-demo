@@ -4,7 +4,6 @@
  */
 #ifndef BASE_MACROS_H
 #define BASE_MACROS_H
-
 #include <cassert>
 
 #define DISALLOW_COPY(TypeName) TypeName(const TypeName &) = delete

@@ -29,12 +29,11 @@ android {
 }
 
 dependencies {
-    implementation files('libs/avpipelinesdk-6.0.0.300.aar')
-    implementation files('libs/avpipeline-aidl-6.0.0.300.aar')
-    implementation files('libs/avpipeline-fallback-base-6.0.0.300.aar')
-    implementation files('libs/avpipeline-fallback-cvfoundry-6.0.0.300.aar')
-    implementation files('libs/avpipeline-fallback-sounddetect-6.0.0.300.aar')
-    api 'com.huawei.hms:dynamic-api:1.0.17.300'
+    implementation 'com.huawei.hms:avpipelinesdk:6.0.0.302'
+    implementation 'com.huawei.hms:avpipeline-aidl:6.0.0.302'
+    implementation 'com.huawei.hms:avpipeline-fallback-base:6.0.0.302'
+    implementation 'com.huawei.hms:avpipeline-fallback-cvfoundry:6.0.0.302'
+    implementation 'com.huawei.hms:avpipeline-fallback-sounddetect:6.0.0.302'
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'

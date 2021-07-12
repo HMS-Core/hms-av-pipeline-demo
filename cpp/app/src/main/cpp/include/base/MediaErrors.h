@@ -66,7 +66,7 @@ enum {
     ERROR_OVERRUN,  // -2147483615
     ERROR_UNDERRUN, // -2147483614
 
-    ERROR_ASYNC = -1000
+    ASYNC_OK = -1000
 };
 } // namespace AVPipeline
 #endif // MEDIA_ERRORS_H

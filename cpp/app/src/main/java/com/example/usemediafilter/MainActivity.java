@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 File outFile = new File(mDstDir, item);
                 FileOutputStream fos = new FileOutputStream(outFile);
                 copy(is, fos);
-                Log.i(TAG, item);
                 is.close();
                 fos.close();
             }

@@ -55,7 +55,7 @@ void TestSoundDetect(string path)
         return;
     }
     meta->SetValue<string>(MEDIA_GRAPH_PATH, path + "/SedPipeline.xml");
-    meta->SetValue<string>(MEDIA_ASSETS_PATH_PREFIX, path + "/sed.om");
+    meta->SetValue<string>(MEDIA_ASSETS_PATH_PREFIX, path);
     meta->SetValue<int32_t>(MEDIA_ATTR_SAMPLE_RATE, 32000);
     meta->SetValue<int32_t>(MEDIA_ATTR_CHANNEL_COUNT, 1);
     meta->SetValue<int32_t>(MEDIA_ATTR_SAMPLE_FORMAT, 1); // AV_SAMPLE_FMT_S16
@@ -83,40 +83,45 @@ void TestSoundDetect(string path)
         return;
     }
     ALOGI("create MediaFilter succ");
-    mFilter->SetListener(make_shared<EventListener>());
+
+    shared_ptr<EventListener> listener = make_shared<EventListener>();
+    mFilter->SetListener(listener);
     RetCode ret = mFilter->Start();
     if (ret != OK) {
         ALOGE("Start MediaFilter failed");
         dlclose(phandle);
         return;
     }
-    ALOGI("Start MediaFilter");
-    string pcmPath = path + "/input.pcm";
+    ALOGI("Start MediaFilter succ");
+
+    string pcmPath = path + "/alg.pcm";
     ifstream fs(pcmPath, ios::in | ios::binary);
     static constexpr int size = 20 * 32000 / 1000 * sizeof(int16_t);
-    auto *data = new char[size];
-    fs.read(data, size);
-    MediaBufferSP mediaBuf = MediaBuffer::Create(MediaBuffer::BT_RawAudio);
-    if (mediaBuf == nullptr) {
-        ALOGE("create MediaBuffer failed");
-        dlclose(phandle);
-        return;
+    int cnt = 0;
+    uint64_t pts = 0;
+    while (cnt++ < 500) {
+        auto *data = new char[size];
+        fs.read(data, size);
+        MediaBufferSP mediaBuf = MediaBuffer::Create(MediaBuffer::BT_RawAudio);
+        if (mediaBuf == nullptr) {
+            ALOGE("create MediaBuffer failed");
+            dlclose(phandle);
+            fs.close();
+            return;
+        }
+        mediaBuf->SetBufferInfo(reinterpret_cast<uintptr_t *>(&data), nullptr, &size, 1);
+        mediaBuf->SetSize(size);
+        mediaBuf->SetPts(pts);
+        mediaBuf->AddReleaseBufferFunc(ReleaseOutputBuffer);
+        mFilter->WriteBuffer(mediaBuf, MT_AUDIO);
+        pts += 30 * 1000;
     }
-    mediaBuf->SetBufferInfo(reinterpret_cast<uintptr_t *>(&data), nullptr, &size, 1);
-    mediaBuf->SetSize(size);
-    mediaBuf->AddReleaseBufferFunc(ReleaseOutputBuffer);
 
-    ret = mFilter->WriteBuffer(mediaBuf, MT_AUDIO);
-    if (ret != OK) {
-        ALOGE("MediaFilter WriteBuffer failed");
-        dlclose(phandle);
-        return;
-    }
-    ALOGI("WriteBuffer succ");
     this_thread::sleep_for(5s);
     mFilter->Stop();
     mFilter.reset();
     dlclose(phandle);
+    fs.close();
     ALOGI("exit");
 }
 

@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private void handlePermission() {
         String[] permissionLists = {
                 Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.ACCESS_NETWORK_STATE,
-                Manifest.permission.READ_PHONE_STATE
+                Manifest.permission.ACCESS_NETWORK_STATE
         };
         int requestPermissionCode = 1;
         for (String permission : permissionLists) {

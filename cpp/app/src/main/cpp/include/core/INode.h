@@ -97,7 +97,7 @@ struct INode {
 
     virtual State GetState() const { return State::MAX_COUNT; }
     virtual const char *Name() const { return "UnknownNode"; }
-    virtual const char *Version() const { return ""; }
+    virtual const char *Version() const { return CORE_PLUGIN_VERSION; }
     virtual WriterSP GetWriter(MediaType);
     virtual RetCode AddDownLink(INode *, MediaType);
     virtual RetCode SetMetaData(const MediaMetaSP &, MediaType) { return ERROR_UNSUPPORTED; }

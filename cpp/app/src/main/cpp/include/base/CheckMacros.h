@@ -2,7 +2,6 @@
  * Copyright (c) Huawei Technologies Co., Ltd. 2019-2020. All rights reserved.
  * Description: header file of check macros
  */
-
 #ifndef CHECK_MARCOS_H
 #define CHECK_MARCOS_H
 #include "base/Log.h"

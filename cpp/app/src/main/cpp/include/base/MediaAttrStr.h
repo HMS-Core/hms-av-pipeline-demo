@@ -158,6 +158,8 @@ extern const char *MEDIA_ATTR_BUFFERING_HIGH_BAR;
 extern const char *MEDIA_ASSETS_PATH_PREFIX;
 extern const char *MEDIA_GRAPH_PATH;
 extern const char *MEDIA_ENABLE_CV;
+extern const char *MEDIA_IS_SR_SUPPORTED;
+extern const char *MEDIA_FORCE_CV;
 extern const char *MEDIA_BUFFER_NOTIFY;
 extern const char *MEDIA_EVENT_NOTIFY;
 extern const char *MEDIA_PRIVATE_DATA;

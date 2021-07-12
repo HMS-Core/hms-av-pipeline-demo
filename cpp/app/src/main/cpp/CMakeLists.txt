@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.10.2)
 project("usemediafilter")
 set(CMAKE_CXX_STANDARD 17)
 
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/so/arm64-v8a)
+add_compile_options(-DCORE_PLUGIN_VERSION="6.0.0.302")
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/so/${ANDROID_ABI})
 find_library(log-lib log)
 
 add_library(native-lib SHARED native-lib.cpp)

@@ -43,6 +43,8 @@ public abstract class PlayerActivity extends AppCompatActivity {
     private static final int MSG_SET_DURATION = 7;
     private static final int MSG_GET_CURRENT_POS = 8;
     private static final int MSG_UPDATE_PROGRESS_POS = 9;
+    private static final int MSG_SEEK = 10;
+
 
     private static final int MIN_CLICK_TIME_INTERVAL = 3000;
     private static long mLastClickTime = 0;
@@ -80,6 +82,10 @@ public abstract class PlayerActivity extends AppCompatActivity {
                 @Override
                 public void handleMessage(Message msg) {
                     switch (msg.what) {
+                        case MSG_SEEK: {
+                            seek((long) msg.obj);
+                            break;
+                        }
                         case MSG_GET_CURRENT_POS: {
                             getCurrentPos();
                             break;
@@ -119,6 +125,11 @@ public abstract class PlayerActivity extends AppCompatActivity {
 
     private void getCurrentPos() {
         long currMsec = mPlayer.getCurrentPosition();
+        if (currMsec == -1) {
+            Log.e(TAG, "get current position failed, try again");
+            mPlayerHandler.sendEmptyMessageDelayed(MSG_GET_CURRENT_POS, 300);
+            return;
+        }
         if (currMsec < mDuration) {
             Message msgTime = mPlayerHandler.obtainMessage();
             msgTime.obj = currMsec;
@@ -279,11 +290,11 @@ public abstract class PlayerActivity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 Log.d(TAG, "bar progress=" + seekBar.getProgress()); // get progress percent
-                if (mDuration > 0 && mPlayer != null) {
-                    long seekToMsec = (int) (seekBar.getProgress() / 100.0 * mDuration);
-                    Log.d(TAG, "seekToMsec=" + seekToMsec);
-                    mPlayer.seek(seekToMsec);
-                }
+                long seekToMsec = (long) (seekBar.getProgress() / 100.0 * mDuration);
+                Message msg = mPlayerHandler.obtainMessage();
+                msg.obj = seekToMsec;
+                msg.what = MSG_SEEK;
+                mPlayerHandler.sendMessage(msg);
             }
         });
         mTextCurMsec = findViewById(R.id.textViewNow);
@@ -338,6 +349,13 @@ public abstract class PlayerActivity extends AppCompatActivity {
     protected void setListener() {
     }
 
+    private void seek(long seekPosMs) {
+        if (mDuration > 0 && mPlayer != null) {
+            Log.d(TAG, "seekToMsec=" + seekPosMs);
+            mPlayer.seek(seekPosMs);
+        }
+    }
+
     private void startPlayMedia() {
         if (mFilePath == null) {
             return;
@@ -367,6 +385,7 @@ public abstract class PlayerActivity extends AppCompatActivity {
             public void onStartCompleted(MediaPlayer mp, int param1, int param2, MediaParcel parcel) {
                 if (param1 != 0) {
                     Log.e(TAG, "start failed, return " + param1);
+                    mPlayerHandler.sendEmptyMessage(MSG_RELEASE);
                 } else {
                     mPlayerHandler.sendEmptyMessage(MSG_START_DONE);
                 }
@@ -378,6 +397,7 @@ public abstract class PlayerActivity extends AppCompatActivity {
             public void onPrepared(MediaPlayer mp, int param1, int param2, MediaParcel parcel) {
                 if (param1 != 0) {
                     Log.e(TAG, "prepare failed, return " + param1);
+                    mPlayerHandler.sendEmptyMessage(MSG_RELEASE);
                 } else {
                     mPlayerHandler.sendEmptyMessage(MSG_PREPARE_DONE);
                 }

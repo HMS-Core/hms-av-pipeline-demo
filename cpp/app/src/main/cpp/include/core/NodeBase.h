@@ -72,10 +72,10 @@ protected:
             if (ret != OK) {
                 return ret;
             }
-            return ERROR_ASYNC;
+            return ASYNC_OK;
         }
 
-        return SendMsg(msg, t);
+        return SendMsg<T>(msg, t);
     }
     bool IsPaused() override { return mState != State::STARTED; }
     RetCode PauseInternel(MsgNotifyMode mode);
