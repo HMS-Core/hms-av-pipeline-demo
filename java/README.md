@@ -18,7 +18,7 @@ Pipelines that can be used in playback scenarios have been preconfigured in the 
 2. Open this sample code in Android studio, compile and run it on your Android device.
 
 ## Supported Environments
-Huawei mobile phone (EMUI 10.0 or later or HarmonyOS 2.0)
+Android mobile phone (Android 9.0 or later)
 
 ##Result
 
