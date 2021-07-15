@@ -16,5 +16,15 @@ Pipelines that can be used in playback scenarios have been preconfigured in the 
 ## Supported Environments
 Huawei mobile phone (EMUI 10.0 or later or HarmonyOS 2.0)
 
+## Technical Support
+
+If you are still evaluating HMS Core, obtain the latest information about HMS Core and share your insights with other developers at [Reddit](https://www.reddit.com/r/HuaweiDevelopers/.).
+
+- To resolve development issues, please go to [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services). You can ask questions below the huawei-mobile-services tag, and Huawei R&D experts can solve your problem online on a one-to-one basis.
+- To join the developer discussion, please visit [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/forum/hms-core).
+
+If you have problems using the sample code, submit [issues](https://github.com/HMS-Core/hms-av-pipeline-demo/issues) and [pull requests](https://github.com/HMS-Core/hms-av-pipeline-demo/pulls) to the repository.
+
 ## License
+
 The sample of AVPipeline Kit has obtained the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0).
