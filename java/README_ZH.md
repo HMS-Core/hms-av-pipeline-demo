@@ -18,7 +18,7 @@ AV Pipeline Kit已预置可应用在播放场景的Pipeline（例如视频播放
 2. 在Android studio中打开此示例代码，编译并运行在您的安卓设备上。
 
 ## 支持的设备
-华为手机（EMUI 10.0及以上版本、HarmonyOS 2.0）
+安卓手机（安卓 9.0及以上版本）
 
 ## 结果
 <img src="AVPipelineResult.png" width="30%" height="30%">
