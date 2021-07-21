@@ -1,36 +1,0 @@
----
-MainSourceFile:  'D:\_project\AVPipeline\code\TAG-2021-06-10-2213\huawei-avpipeline-android-cpp-demo\app\src\main\cpp\native-lib.cpp'
-Diagnostics:
-  - DiagnosticName:  clang-diagnostic-error
-    DiagnosticMessage:
-      Message:         '''jni.h'' file not found'
-      FilePath:        'D:\_project\AVPipeline\code\TAG-2021-06-10-2213\huawei-avpipeline-android-cpp-demo\app\src\main\cpp\native-lib.cpp'
-      FileOffset:      9
-      mainBuggyLine:   1
-      mainBuggyCode:   '#include <jni.h>'
-      DiagLevel:       error
-      Replacements:    []
-  - DiagnosticName:  huawei-macro-define-not-const
-    DiagnosticMessage:
-      Message:         Macros are not allowed to represent constants.
-      FilePath:        'D:\_project\AVPipeline\code\TAG-2021-06-10-2213\huawei-avpipeline-android-cpp-demo\app\src\main\cpp\native-lib.cpp'
-      FileOffset:      296
-      mainBuggyLine:   14
-      mainBuggyCode:   '#define LOG_TAG "avp-cppdemo"'
-      DiagLevel:       warning
-      Replacements:    []
-  - DiagnosticName:  readability-function-size
-    DiagnosticMessage:
-      Message:         'function ''TestSoundDetect'' exceeds recommended size/complexity thresholds'
-      FilePath:        'D:\_project\AVPipeline\code\TAG-2021-06-10-2213\huawei-avpipeline-android-cpp-demo\app\src\main\cpp\native-lib.cpp'
-      FileOffset:      1466
-      mainBuggyLine:   49
-      mainBuggyCode:   'void TestSoundDetect(string path) {'
-      DiagLevel:       warning
-      Replacements:    []
-    Notes:
-      - Message:         '70 lines including whitespace and comments (threshold 50)'
-        FilePath:        'D:\_project\AVPipeline\code\TAG-2021-06-10-2213\huawei-avpipeline-android-cpp-demo\app\src\main\cpp\native-lib.cpp'
-        FileOffset:      1466
-        Replacements:    []
-...

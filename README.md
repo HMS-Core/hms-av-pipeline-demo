@@ -1,6 +1,9 @@
 # HUAWEI AV Pipeline Kit Sample
 
+English | [中文](README_ZH)
+
 ## Table of Contents
+
  * [Introduction](#introduction)
  * [Getting Started](#getting-started)
  * [Supported Environments](#supported-environments)
