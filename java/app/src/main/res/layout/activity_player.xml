@@ -25,7 +25,7 @@
         android:layout_marginEnd="15dp"
         android:checked="false"
         android:showText="true"
-        android:text="超分"
+        android:text="super resolution"
         android:textOn=""
         android:textOff=""
         app:layout_constraintTop_toTopOf="@id/selectFileBtn"
