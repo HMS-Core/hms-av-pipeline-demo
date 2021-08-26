@@ -130,10 +130,10 @@ public class AssetActivity extends AppCompatActivity {
                 intent.addCategory(Intent.CATEGORY_DEFAULT);
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 try {
-                    startActivityForResult(Intent.createChooser(intent, "请选择文件"), 1);
+                    startActivityForResult(Intent.createChooser(intent, "choose file"), 1);
                 } catch (ActivityNotFoundException e) {
                     e.printStackTrace();
-                    Toast.makeText(AssetActivity.this, "请安装文件管理器", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AssetActivity.this, "install file manager first", Toast.LENGTH_SHORT).show();
                 }
             }
         });
