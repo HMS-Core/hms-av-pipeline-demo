@@ -1,6 +1,6 @@
-# 华为多媒体管线服务C++示例代码
+﻿# 华为多媒体管线服务C++示例代码
 
-[English](README.md) | 中文
+中文 | [English](README.md)
 
 ## 目录
 
@@ -21,4 +21,4 @@ AV Pipeline Kit已预置可应用在播放场景的Pipeline（例如视频播放
 华为手机（EMUI 10.0及以上版本、HarmonyOS 2.0）
 
 ## 许可证
-该示例代码已获取了Apache 2.0许可证(http://www.apache.org/licenses/LICENSE-2.0)
+该示例代码已获取了[Apache 2.0许可证](http://www.apache.org/licenses/LICENSE-2.0)。

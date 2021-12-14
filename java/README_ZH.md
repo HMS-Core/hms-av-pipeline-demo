@@ -1,11 +1,12 @@
-# 华为多媒体管线服务Java示例代码
+﻿# 华为多媒体管线服务Java示例代码
 
-[English](README.md) | 中文
+中文 | [English](README.md)
 
 ## 目录
  * [简介](#简介)
  * [快速上手](#快速上手)
  * [支持的设备](#支持的设备)
+ * [demo apk使用说明](#demo apk使用说明)
  * [结果](#结果)
  * [许可证](#许可证)
 
@@ -27,4 +28,5 @@ AV Pipeline Kit已预置可应用在播放场景的Pipeline（例如视频播放
 <img src="AVPipelineResult.png" width="30%" height="30%">
 
 ## 许可证
-该示例代码已获取了Apache 2.0许可证(http://www.apache.org/licenses/LICENSE-2.0)
+该示例代码已获取了[Apache 2.0许可证](http://www.apache.org/licenses/LICENSE-2.0)。
+

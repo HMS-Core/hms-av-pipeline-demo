@@ -1,33 +1,35 @@
-# HUAWEI AV Pipeline Kit Sample
+﻿# HMS Core AV Pipeline Kit Sample Code
 
-English | [中文](README_ZH)
+English | [中文](README_ZH.md)
 
-## Table of Contents
+## Contents
 
- * [Introduction](#introduction)
- * [Getting Started](#getting-started)
- * [Supported Environments](#supported-environments)
- * [License](#license)
+ * [Introduction](#Introduction)
+ * [Quick Tutorial](#Quick-Tutorial)
+ * [Supported Devices](#Supported-Devices)
+ * [Technical Support](#Technical Support)
+ * [License](#License)
 ## Introduction
-AV Pipeline Kit is a framework for creating media applications. It parses a configuration file and connects multiple plug-ins according to the orchestration relationship in the configuration file to form a pipeline to implement specific media services (such as playback, recording, and editing). Each plug-in is responsible for completing a specific task, for example, demuxing, decoding, and filtering.
-Pipelines that can be used in playback scenarios have been preconfigured in the AV Pipeline Kit. (e.g., video playback, video overcommitment, sound event detection) and encapsulates the API into a Java interface for developers to use. In addition, developers can directly invoke a single plug-in through C++ interfaces. If preconfigured plug-ins or pipelines do not meet requirements, developers can customize plug-ins or pipelines.
+AV Pipeline Kit is a system for easier media app development. It contains a framework that parses plugin orchestration logic from each configuration file to create a pipeline with capabilities such as media playback, recording, or editing. Each plugin in a pipeline undertakes specific tasks, for example, demuxing, decoding, and filtering.
+AV Pipeline Kit presets pipelines for scenarios like video playback, video super-resolution, and sound event detection, and it provides Java APIs for you to use these pipelines. You can also call a single preset plugin directly through C++ APIs. If you want to achieve more functions other than those provided by the preset plugins or pipelines, you can even customize some plugins or pipelines based on your own needs.
 
-## Getting Started
-1. Check whether your Android Studio development environment is ready. 
-2. Open "cpp" or "java" in Android studio, compile and run it on your Android device.
+## Quick Tutorial
+1. Install Android Studio on your computer.
+2. Open the sample code in Android Studio and find the **cpp** or **java** directory. Then, compile the code and run the demo app on your Android device.
 
-## Supported Environments
-Android mobile phone (Android 9.0 or later)
+## Supported Devices
+Phones running Android 9.0 or later
 
 ## Technical Support
+You can visit the [Reddit community](https://www.reddit.com/r/HuaweiDevelopers/) to obtain the latest information about HMS Core and communicate with other developers.
 
-If you are still evaluating HMS Core, obtain the latest information about HMS Core and share your insights with other developers at [Reddit](https://www.reddit.com/r/HuaweiDevelopers/.).
+If you have any questions about the sample code, try the following:
+- Visit [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes), submit your questions, and tag them with `huawei-mobile-services`. Huawei experts will answer your questions.
+- Visit the HMS Core section in the [HUAWEI Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001?ha_source=hms1) and communicate with other developers.
 
-- To resolve development issues, please go to [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services). You can ask questions below the huawei-mobile-services tag, and Huawei R&D experts can solve your problem online on a one-to-one basis.
-- To join the developer discussion, please visit [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/forum/hms-core).
-
-If you have problems using the sample code, submit [issues](https://github.com/HMS-Core/hms-av-pipeline-demo/issues) and [pull requests](https://github.com/HMS-Core/hms-av-pipeline-demo/pulls) to the repository.
+If you encounter any issues when using the sample code, submit your [issues](https://github.com/HMS-Core/hms-av-pipeline-demo/issues) or submit a [pull request](https://github.com/HMS-Core/hms-av-pipeline-demo/pulls).
 
 ## License
 
-The sample of AVPipeline Kit has obtained the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0).
+The sample code is licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
